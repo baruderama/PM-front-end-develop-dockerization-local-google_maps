@@ -1,0 +1,350 @@
+/* 
+Css para para el menu lateral, y para los modulos y submodulos
+*/
+.nav-sub {
+  transition: 4s ease;
+  height: 0;
+}
+.slide {
+  height: auto;
+  overflow: auto !important;
+  display: block !important;
+  transition: 4s ease;
+}
+
+/*======================*/
+
+/*
+css del modal que sale al crear objetos en el sistema
+*/
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Color de fondo oscuro semitransparente */
+  z-index: 9999; /* Asegura que el fondo esté sobre otros elementos */
+}
+
+.modal-header {
+  background-color: #232e40;
+}
+
+.modal-title {
+  color: #fff;
+}
+/*===========================================*/
+
+/*
+css para la interaccion con los iconos
+*/
+.icon-item {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.icon-item:hover {
+  background-color: #3498db; /* Cambia el color de fondo al pasar el cursor */
+}
+
+.icon-item:hover i {
+  color: white; /* Cambia el color del ícono al pasar el cursor */
+}
+/*++================================================================*/
+
+/*Paginacion para la lista de pqrs*/
+/* Estilo para los botones de paginación */
+/* Estilo para el contenedor de la paginación */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+/* Estilo para los elementos de la paginación (botones) */
+.pagination li {
+  margin: 0 5px; /* Espacio entre los botones */
+}
+
+/* Estilo para los enlaces de paginación */
+.pagination a {
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+/* Cambia el fondo al pasar el mouse sobre los enlaces */
+.pagination a:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para el botón activo (página actual) */
+.pagination .active a {
+  background-color: #0056b3; /* Color más claro para el botón activo */
+}
+
+/* Cambia el fondo en el botón activo al pasar el mouse */
+.pagination .active a:hover {
+  background-color: #0056b3;
+}
+
+/* Cursor de estilo puntero para los enlaces */
+.pagination a {
+  cursor: pointer;
+}
+
+/* Estilo para el botón activo */
+.pagination .active {
+  cursor: default; /* El botón activo no es clickeable */
+}
+/*============================================================*/
+
+
+/*
+Este son los estilos que ponen en la esquina superior drecha los filtros
+*/
+.filters-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea los elementos a la derecha */
+  margin-top: 10px; /* Espacio superior para separar de otros contenidos */
+}
+
+.filter-select {
+  margin-top: 5px; /* Espacio entre selectores */
+  
+}
+
+/* Estilo opcional para etiqueta "Filtros" */
+.filters-container h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px; /* Espacio inferior */
+}
+
+/*======================================================*/
+
+
+/*
+Estilos para la tabla de pqrs
+*/
+/* Estilo para las filas de la tabla */
+.table tbody tr {
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Estilo para las filas de la tabla al pasar el mouse */
+.table tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+/*======================================================*/
+
+
+/*==========================================================*/
+/* Estilos para tamaños de fuente personalizados, para el REACTQUILL del formulario
+de detalles de pqr
+*/
+.ql-size-small {
+  font-size: 12px;
+}
+
+.ql-size-large {
+  font-size: 16px;
+}
+
+.ql-size-huge {
+  font-size: 32px;
+}
+
+/*==========================================================*/
+
+
+
+/*==========================================================*/
+/* Estilos para el botón "Agregar Auxiliar", del formulario de detalles de pqr, al agregar o
+  quitar usuarios
+*/
+.auxiliar-input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.auxiliar-input {
+  flex-grow: 1; /* El input ocupa todo el espacio restante */
+  margin-right: 10px; /* Espacio entre el input y el botón */
+}
+
+.add-auxiliar-button,
+.remove-auxiliar-button {
+  width: 30px; /* Ancho cuadrado */
+  height: 30px; /* Altura cuadrada */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.add-auxiliar-button {
+  color: green; /* Color del botón de agregar */
+}
+
+.remove-auxiliar-button {
+  color: red; /* Color del botón de remover */
+}
+
+.plus-icon {
+  font-size: 19px; /* Ajusta el tamaño del icono según tus preferencias */
+}
+
+/*==========================================================*/
+
+
+
+
+/*==========================================================*/
+
+/*
+Estos estilos son para los radio buttons del detalle de pqr
+*/
+/* Estilo personalizado para los radio buttons */
+.custom-radio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Estilo del radio button oculto */
+.radio-input {
+  opacity: 0;
+  position: absolute;
+}
+
+/* Estilo del círculo del radio button */
+.radio-control {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  /* cursor: pointer; */
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Estilo del círculo del radio button cuando está seleccionado */
+.radio-input:checked + .radio-control {
+  background-color: #333;
+  border-color: #333;
+}
+
+/* Estilo del ícono dentro del círculo cuando está seleccionado */
+.radio-input:checked + .radio-control::before {
+  content: '\f00c'; /* Icono de marca de verificación (FontAwesome) */
+  font-family: FontAwesome;
+  font-size: 12px;
+  color: #fff;
+}
+
+/* Estilo del texto del radio button */
+.radio-label {
+  font-size: 16px;
+}
+
+
+/*==========================================================*/
+
+
+/*==========================================================*/
+/*
+Esilo para juntar los botones de descarga y eliminar de los detalles del pqr
+*/
+.documento-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.documento-buttons {
+  display: flex;
+  gap: 10px; /* Espacio entre los botones */
+}
+/*==========================================================*/
+
+/*==========================================================*/
+
+/*
+Estilos para la parte de cargar y eliminar archivos de los detalles de pqrs
+*/
+.documentos-container {
+  background-color: #f2f2f2; /* Color de fondo grisáceo */
+  padding: 10px; /* Espaciado interno para la sección de documentos */
+}
+
+.documentos-section {
+  background-color: #ffffff; /* Color de fondo blanco para cada sección */
+  border: 1px solid #ddd; /* Borde alrededor de cada sección */
+  padding: 10px; /* Espaciado interno para cada sección */
+  margin-bottom: 10px; /* Espaciado inferior entre secciones */
+}
+/*==========================================================*/
+
+
+/*==========================================================*/
+/*
+Estilos para los radio butons del componente de detalles del pqr
+*/
+.radio-group-container {
+  display: inline-block; /* Hace que los contenedores se alineen en línea */
+  margin-right: 20px; /* Espacio entre los contenedores */
+}
+
+.form-group-with-radio {
+  display: inline-block;
+  margin-right: 200px; /* Ajusta el margen según tus preferencias */
+}
+/*==========================================================*/
+
+
+/*==========================================================*/
+/*
+Estilo para poner arriba el label de la fecha en crear utm
+*/
+.label-top {
+  display: block; /* Hace que el label sea un bloque para que ocupe toda la anchura disponible */
+  margin-bottom: 5px; /* Añade espacio entre el label y el DatePicker */
+  text-align: left; /* Alinea el texto del label a la izquierda */
+}
+/*==========================================================*/
+
+
+.custom-datepicker {
+  width: 100%;
+}
+
+
+/*
+Este estilo es para el icono de la caneca de la lista de utms
+*/
+.icon-hover:hover {
+  color: red; /* Cambia el color del icono cuando se hace hover */
+   /* Cambia el cursor a una mano cuando se hace hover */
+}

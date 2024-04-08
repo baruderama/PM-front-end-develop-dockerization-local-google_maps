@@ -1,0 +1,88 @@
+/*!
+ * Amanda Responsive Bootstrap 4 Admin Template
+ * Version: 2.0.0
+ * Author: ThemePixels (@themepixels)
+ * URL: http://themepixels.me/amanda
+ *
+**/
+
+/* --------------------------------------------------- */
+/* ############### GOOGLE FONTS IMPORT ############### */
+/* --------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+// Bootstrap variable overrides
+@import "bootstrap/variables.scss";
+
+/* --------------------------------------------------- */
+/* ############### BOOTSTRAP FRAMEWORK ############### */
+/* --------------------------------------------------- */
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../../node_modules/bootstrap/scss/mixins/alert.scss";
+
+// Custom mixins and variables
+@import "variables.scss";
+@import "mixins.scss";
+
+/* --------------------------------------------------- */
+/* ############### BOOTSTRAP OVERRIDES ############### */
+/* --------------------------------------------------- */
+@import "bootstrap/alerts.scss";
+@import "bootstrap/buttons.scss";
+@import "bootstrap/card.scss";
+@import "bootstrap/custom.scss";
+@import "bootstrap/custom-forms.scss";
+@import "bootstrap/forms.scss";
+@import "bootstrap/form-layouts.scss";
+@import "bootstrap/modal.scss";
+@import "bootstrap/nav.scss";
+@import "bootstrap/pagination.scss";
+@import "bootstrap/popover.scss";
+@import "bootstrap/progress.scss";
+@import "bootstrap/tooltip.scss";
+@import "bootstrap/tables.scss";
+
+// Custom mixins for lib styles
+@import "lib/mixins.scss";
+
+/* ---------------------------------------------------- */
+/* ############### CUSTOM VENDOR STYLES ############### */
+/* ---------------------------------------------------- */
+@import "lib/datatables.scss";
+@import "lib/flot.scss";
+@import "lib/jquery-steps.scss";
+@import "lib/jqvmap.scss";
+@import "lib/jquery-ui.scss";
+@import "lib/medium-editor.scss";
+@import "lib/morris.scss";
+@import "lib/parsley.scss";
+@import "lib/perfect-scrollbar.scss";
+@import "lib/rickshaw.scss";
+@import "lib/select2.scss";
+@import "lib/sparkline.scss";
+@import "lib/spectrum.scss";
+@import "lib/summernote.scss";
+@import "lib/toggles.scss";
+
+
+/* ---------------------------------------------------- */
+/* ############### TEMPLATE CORE STYLES ############### */
+/* ---------------------------------------------------- */
+@import "app.scss";
+@import "pages.scss";
+
+
+/* ---------------------------------------------------------- */
+/* ############### UTILITIES / HELPER CLASSES ############### */
+/* ---------------------------------------------------------- */
+@import "util/background.scss";
+@import "util/border.scss";
+@import "util/height.scss";
+@import "util/hover.scss";
+@import "util/margin.scss";
+@import "util/misc.scss";
+@import "util/padding.scss";
+@import "util/position.scss";
+@import "util/typography.scss";
+@import "util/width.scss";
