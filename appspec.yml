@@ -2,6 +2,6 @@
 version: 0.0
 os: linux
 files:
-  - source: /dist
+  - source: /build
     destination: /var/www/frontend
 hooks:
