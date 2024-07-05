@@ -3,7 +3,7 @@
  * @constant SECRET_KEY contiene la llave secreta para desencriptar la informacion del usuario
  * guardada en el localStorage
  */
-const API_URL_GATEWAY = "https://localhost:9002/api/v1/gateway";
+const API_URL_GATEWAY = "http://localhost:9002/api/v1/gateway";
 const API_URL_GATEWAY_RDS = "http://18.231.138.8:9002/api/v1/gateway";
 const API_URL_GATEWAY_EC2 = "https://trasteosymudanzas.com/api/v1/gateway";
 const SECRET_KEY = process.env.REACT_APP_SECRET_KEY;

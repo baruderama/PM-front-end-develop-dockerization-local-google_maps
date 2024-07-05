@@ -1,0 +1,7 @@
+#appspec
+version: 0.0
+os: linux
+files:
+  - source: /dist
+    destination: /var/www/frontend
+hooks:
